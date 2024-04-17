@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+        stage('Gitcheck out'){
+            steps{
+                echo "Checking out the code"
+            }
+
+        }
+        stage('building the jar')
+        steps{
+            echo "Building the jar"
+        }
+        stage('test'){
+            echo "testing the jar file"
+        }
+    }
+}
